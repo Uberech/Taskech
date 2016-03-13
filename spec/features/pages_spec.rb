@@ -10,7 +10,7 @@ RSpec.feature "Visiting Pages" do
   end
 
   scenario "Tasks"  do
-    visit "/test"
+    visit "/task"
     expect(page).to have_content('My Tasks')
     
     # my tasks page - listing of tasks that you have entered - 
