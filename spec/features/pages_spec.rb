@@ -48,5 +48,11 @@ RSpec.feature "Visiting Pages" do
     pending "Add helper for nav checking"
     expect(1).to eq(0)
   end
+
+  scenario "Footer"  do
+    pending "Add helper for footer checking"
+    expect(1).to eq(0)
+    # Footer should include a link to Uberech
+  end
   
 end
