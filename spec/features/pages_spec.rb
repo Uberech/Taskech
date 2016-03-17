@@ -10,17 +10,17 @@ RSpec.feature "Visiting Pages" do
   end
 
   scenario "Tasks"  do
-    visit "/task"
+    visit "/tasks"
     expect(page).to have_content('My Tasks')
     
     # my tasks page - listing of tasks that you have entered - 
     #  I leave the details to you but should definitely include an ability to 
-    #  add new tasks, delete tasks, task details with completion date. 
+    #  add new tasks, delete tasks, task details with completion date.
     
   end
 
   scenario "Today"  do
-    visit "/task/today"
+    visit "/tasks/today"
     expect(page).to have_content("Tasks for Today")
     # today's task listing - this will display the tasks that have the 
     #  completion date on the current date and have not been completed yet, and 
@@ -31,7 +31,7 @@ RSpec.feature "Visiting Pages" do
   end
 
   scenario "Week"  do
-    visit "/task/week"
+    visit "/tasks/week"
     expect(page).to have_content("Tasks for this Week")
     # weekly tasks listing - this will display all the tasks that are pending 
     #  and completed for the rest of the week (so upto 7 days in the future). 
