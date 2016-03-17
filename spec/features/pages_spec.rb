@@ -15,7 +15,7 @@ RSpec.feature "Visiting Pages" do
     
     # my tasks page - listing of tasks that you have entered - 
     #  I leave the details to you but should definitely include an ability to 
-    #  add new tasks, delete tasks, task details with completion date. 
+    #  add new tasks, delete tasks, task details with completion date.
     
   end
 
