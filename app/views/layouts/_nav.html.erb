@@ -1,0 +1,17 @@
+<%= nav_bar brand: "Taskech", responsive: true do %>
+  <%= menu_group do %>
+    <%= drop_down "Tasks" do %>
+      <%= menu_item "All Tasks", tasks_path %>
+      <%= drop_down_divider %>
+      <%= menu_item "Today's Tasks", tasks_today_path %>
+      <%= menu_item "Week's Tasks", tasks_week_path %>
+    <% end %>
+  <% end %>
+  <%= menu_group pull: :right do %>
+    <% if current_user %>
+      <%= menu_item "Sign out", destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= menu_item "Sign in", new_user_session_path %>
+    <% end %>
+  <% end %>
+<% end %>
