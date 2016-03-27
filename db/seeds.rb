@@ -24,7 +24,7 @@ end
 # Demo tasks are based on Faker::Hacker.say_something_smart
 
 Fabricator(:task) do
-  task { "Try to #{fhack.verb} the #{fhack.abbreviation} #{fhack.noun}" }
+  task { "#{fhack.verb.capitalize} the #{fhack.abbreviation} #{fhack.noun}" }
   due_date
   is_completed
   user
