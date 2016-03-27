@@ -16,8 +16,9 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 
-# User faker for generating demo users/tasks
+# User faker/fabrication for generating demo users/tasks
 gem 'faker'
+gem 'fabrication'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
